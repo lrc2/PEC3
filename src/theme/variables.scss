@@ -86,3 +86,25 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+$toolbar-md-background:                   color($colors, primary);
+
+// Use the default background for the tabbar since it inherits from toolbar
+$tabbar-md-background:                    #f8f8f8;
+
+// Change the color of the tabs text
+$tab-button-md-active-color:              color($colors, primary);
+$tab-button-md-inactive-color:            #6c3c1c;
+
+// Change the color of the segment button text
+$toolbar-md-active-color:                 #fff;
+$toolbar-md-inactive-color:               #222;
+$segment-button-md-text-color-activated:  #555;
+
+
+.tabs-md .tab-button[aria-selected=true] {
+    color: #444; /*your  text color */
+    background: #404040; /* your background color*/
+}
+
+$tabs-md-tab-icon-color-active: red;
